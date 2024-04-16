@@ -1,0 +1,144 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    background: white;
+    color: black;
+}
+nav div{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav div input{
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 8px;
+    background-color: rgb(43,43,43);
+    color: white;
+    border-bottom: 1px solid #ccc;
+}
+nav div input::placeholder{
+    color: #ccc;
+}
+nav div button{
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 8px;
+    background-color: rgb(0, 132, 255);
+    color: white;
+    border: 1px solid #ccc;
+    margin: 10px;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    column-gap: 20px;
+}
+
+#Main{
+    padding: 10px;
+    min-height: 100vh;
+    border: 3px solid gold;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.Card{
+    height: 600px;
+    flex: 1;
+    min-width: 350px;
+    overflow: hidden;
+}
+
+.Image{
+height: 60%;
+width: 100%;
+}
+.Image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.Content{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Content h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.Content h3{
+    font-size: 0.8rem;
+    text-align: center;
+}
+.Content p{
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.Content button{
+    margin-top: 10px;
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 8px;
+    background-color: rgb(0, 132, 255);
+    color: white;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button{
+    margin-top: 10px;
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 8px;
+    background-color: rgb(0, 132, 255);
+    color: white;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgba(0, 132, 255, 0.7);
+}
+
+@media screen and (max-width: 768px) 
+{
+nav{
+    flex-direction: column;
+    row-gap: 20px;
+}    
+nav div{
+    width: 70%;
+}
+
+}
+@media screen and (max-width: 468px) 
+{
+nav ul{
+    flex-direction: column;
+    row-gap: 20px;
+}    
+nav div{
+    width: 100%;
+}
+
+}
